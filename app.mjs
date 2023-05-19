@@ -9,3 +9,6 @@ const log = (txt) => {
 
 log(`random: ${defaultRandomize()}`);
 log(`range random: ${rangeRandomize(3)}`);
+import("./utils.mjs").then((m) => {
+  log(m.rangeRandomize(1));
+});
